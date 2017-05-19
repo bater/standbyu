@@ -15,16 +15,11 @@
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
-
-  <div class="field">
-    <%= f.label :city %>
-    <%= f.text_field :city %>
+  <div class="city-group">
+    <%= select_tag(:city, options_for_select( TaiwanCity.list), class: "city-select", name: "post[city]") %>
+    <%= select_tag(:district, content_tag(:option, "please select") ,class: "city-select", name: "post[district]") %>
   </div>
 
-  <div class="field">
-    <%= f.label :district %>
-    <%= f.text_field :district %>
-  </div>
 
   <div class="field">
     <%= f.label :adress %>

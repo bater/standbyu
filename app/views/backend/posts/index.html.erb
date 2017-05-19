@@ -22,8 +22,8 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= link_to post.title, [:backend, post] %></td>
-        <td><%= post.city %></td>
-        <td><%= post.district %></td>
+        <td><%= TaiwanCity.get(post.city)  %></td>
+        <td><%= TaiwanCity.get(post.district)  %></td>
         <td><%= post.adress %></td>
         <td><%= post.phone %></td>
         <td><%= post.service_time %></td>
