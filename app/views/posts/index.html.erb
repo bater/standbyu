@@ -37,15 +37,15 @@
           <div class="col-md-8 col-md-offset-2 centered">
             <h1>選擇你所在的縣市<br/>我們將會列出附近的資源</h1>
             <div class="mtb">
-              <form role="form" action="register.php" method="post" enctype="plain">
+              <%= form_tag('/', method: :get) do %>
                 <div class="city-group">
                   <%= select_tag(:city, options_for_select( TaiwanCity.list), class: "subscribe-input main_select city-select", name: "city") %>
-                  <select name="district" id="district" class="subscribe-input main_select city-select">
+                  <!--<select name="district" id="district" class="subscribe-input main_select city-select">
                     <option value="">請選擇</option>
-                  </select>
+                  </select>-->
                 </div>
                 <button class='btn btn-conf btn-green' type="submit">開始搜尋</button>
-              </form>
+              <% end %>
             </div><!--/mt-->
             <h6>別擔心，這完全免費！</h6>
           </div>
@@ -95,7 +95,7 @@
                 <div class="p-body">
                   <ul class="features">
                     <%= content_tag :li, post.phone if post.phone.present? %>
-                    <%= content_tag :li, post.adress if post.adress.present? %>
+                    <%= content_tag :li, post.adress if post.adress.present? %>｀
                     <%= content_tag :li, post.service_time if post.service_time.present? %>
                     <%= content_tag :li, post.description if post.description.present? %>
                   </ul>

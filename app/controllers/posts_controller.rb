@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    if params[:city].present?
+      @posts = Post.where(city: params[:city])
+    else
+      @posts = Post.all
+    end
   end
 end
