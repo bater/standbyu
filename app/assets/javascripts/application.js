@@ -17,3 +17,4 @@
 //= require bootstrap/alert
 //= require_tree .
 //= require 'taiwan_city/jquery.taiwan_city'
+//= require_tree ../../../vendor/assets/SumoLanding/js/.

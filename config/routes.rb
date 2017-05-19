@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root "posts#index"
+  resources :posts, only: :index
   namespace :backend do
     resources :posts
   end
