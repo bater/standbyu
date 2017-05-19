@@ -94,9 +94,8 @@
                 </div>
                 <div class="p-body">
                   <ul class="features">
-                    <%= content_tag :li, post.title %>
-                    <%= content_tag :li, post.adress if post.adress.present? %>
                     <%= content_tag :li, post.phone if post.phone.present? %>
+                    <%= content_tag :li, post.adress if post.adress.present? %>
                     <%= content_tag :li, post.service_time if post.service_time.present? %>
                     <%= content_tag :li, post.description if post.description.present? %>
                   </ul>
