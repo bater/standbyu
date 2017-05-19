@@ -15,14 +15,14 @@
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
-* { 
+* {
 	margin: 0;
 	padding: 0px;
     font-family: 'Lato', sans-serif;
-} 
-body { 
-	background: #fff; 
-	margin: 0; 
+}
+body {
+	background: #fff;
+	margin: 0;
 	color: #5a5a5a;
 }
 
@@ -32,16 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-p { 
-	padding: 0; 
-	margin-bottom: 12px; 
+p {
+	padding: 0;
+	margin-bottom: 12px;
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 16px; 
+	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 1px;
-	color: #666; 
-	margin-top: 10px; 
+	color: #666;
+	margin-top: 10px;
 }
 
 html,
@@ -91,10 +91,10 @@ body {
 	padding: 0;
 	margin: 0;
 }
-a { 
+a {
 	padding: 0;
 	margin: 0;
-	text-decoration: none; 
+	text-decoration: none;
 	-webkit-transition: background-color .4s linear, color .4s linear;
 	-moz-transition: background-color .4s linear, color .4s linear;
 	-o-transition: background-color .4s linear, color .4s linear;
@@ -169,7 +169,7 @@ input {
 	text-transform: uppercase;
 	padding: 12px 28px 11px 28px;
 	margin-top: 20px;
-	}	
+	}
 
 .btn-green {
 	background: #03C9A9;
@@ -178,7 +178,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: image-url('img/header.jpg') no-repeat center top;
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
@@ -186,7 +186,7 @@ input {
 	min-height: 700px;
 	width: 100%;
 	color: white;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -203,7 +203,7 @@ input {
 	left: 45px;
 	font-size: 18px;
 	font-weight: 900;
-	position:absolute; 
+	position:absolute;
 }
 
 #h .social {
@@ -235,7 +235,7 @@ input {
 
 /* SEP */
 #sep {
-	background: url(../img/sep.jpg) no-repeat center top;
+	background: image-url('img/sep.jpg') no-repeat center top;
 	padding-top: 90px;
 	text-align:center;
 	background-attachment: relative;
@@ -243,7 +243,7 @@ input {
 	min-height: 450px;
 	width: 100%;
 	color: white;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -267,7 +267,7 @@ input {
 	border-radius: 25px;
 	padding-top: 15px;
 	padding-bottom: 25px;
-	margin: 5px; 
+	margin: 5px;
 }
 
 .price-table .p-head {
