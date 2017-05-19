@@ -103,8 +103,8 @@
                 </div><!--/p-body-->
             </div><!--/price-table-->
           </div><!--/col-md-4-->
-        <% end%>
-
+        <% end %>
+        <%= "很抱歉！你所在的區域目前沒有資料。" if @posts.blank? %>
       </div><!--/row-->
     </div><!--/container-->
 
